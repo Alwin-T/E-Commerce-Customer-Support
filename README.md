@@ -1,4 +1,4 @@
-# Intelligent Customer Interaction Management System (ICIMS) – E-Commerce Voice Agent
+E-Commerce Voice Agent
 
 ## Overview
 This project implements an **AI-powered voice agent** for e-commerce customer support using **smallest.ai**.  
