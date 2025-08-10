@@ -15,6 +15,12 @@ The agent assists customers with product inquiries, order tracking, returns, FAQ
 - **Search Integration (Optional)**: Connect to external search APIs for broader information retrieval.  
 
 ---
+## Workflow
+<img width="1059" height="773" alt="image" src="https://github.com/user-attachments/assets/38eed711-1245-44e1-a3df-55a4fe21522e" />
+
+<img width="1158" height="804" alt="image" src="https://github.com/user-attachments/assets/cba65fbd-1f02-40ab-ab54-718a46955a2e" />
+
+
 
 ## Tech Stack
 - **Platform**: smallest.ai  
@@ -25,16 +31,14 @@ The agent assists customers with product inquiries, order tracking, returns, FAQ
 ---
 
 ## Project Structure
-📂 icims-voice-agent  
- ├── 📂 data  
- │    ├── output_first150.csv              # Sample order and product data  
+📂 voice-agent  
+ ├── 📂 Knowledge Base 
+ │    ├── output_first150.pdf              # Sample order and product data  
  │    ├── ecommerce_faq.pdf                 # Frequently asked questions  
- │    └── about_agent.txt                   # Agent overview  
- ├── 📂 scripts  
- │    ├── csv_trim.py                       # Extract a subset of data  
- │    ├── replace_order_ids.py              # Assign unique anonymized order IDs  
+ │    └── about_agent.pdf                   # Agent overview  
+ ├── 📂 Workflow  
+ │    ├── pathway.json                       # Extract a subset of data   
  ├── README.md  
- └── requirements.txt  
 
 ---
 
@@ -46,12 +50,8 @@ git clone https://github.com/yourusername/icims-voice-agent.git
 cd icims-voice-agent
 ```
 
-### 2. Install Requirements
-```bash
-pip install -r requirements.txt
-```
 
-### 3. Configure smallest.ai Agent
+### 2. Configure smallest.ai Agent
 - Upload relevant data files.  
 - Set system prompt to handle customer interactions and order tracking.  
 - Map API calls if enabling web search or external data lookups.  
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 ---
 
 ## Usage
-- Customers interact with the agent through voice or chat.  
+- Customers interact with the agent through voice. 
 - The agent responds to questions, tracks orders, and handles return/refund processes.  
 - For complex issues, the agent escalates the request to a human.  
 
